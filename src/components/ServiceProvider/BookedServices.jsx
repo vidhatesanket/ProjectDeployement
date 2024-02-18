@@ -71,7 +71,7 @@ const BookedServices = () => {
     <center className="login-center">
       <h1>Skill🔗Link</h1>
       <div className="container">
-        <h3>Booked Services</h3>
+        <h3>Suggested Service Providers</h3>
         <nav id="menu" className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
@@ -130,7 +130,7 @@ const BookedServices = () => {
                 <td>{service.phoneNumber}</td>
                 <td>{service.skills}</td>
                 <td>{service.wages}</td>
-                <td>{service.rating}</td>
+                <td>{service.rating.toFixed(1)}</td>
                 <td>
                   <button
                     className={`btn ${
