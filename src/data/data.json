@@ -1,0 +1,189 @@
+{
+  "Header": {
+    "title": "Skill Link",
+    "paragraph": "Linking Needy To Employment"
+  },
+  "About": {
+    "paragraph": "Skill-Link is to provide services to consumers through an user friendly technology-enabled platform. The application aims to simplify the process of finding and booking reliable service providers for various services such as cleaning, home repairs etc. Our goal is to offer a  convenient and hassle-free experience to its customers by providing them with a wide range of services at their preferred time and location",
+    "paragraph2":""
+  },
+  "Gallery": [
+    {
+      "title": "Cleaner",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/cleaning.jpg"
+    },
+    {
+      "title": "electrician",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/electrician.jpg"
+    },
+    {
+      "title": "Gardener",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/gardener.jpg"
+    },
+    {
+      "title": "Painter",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/paint.jpg"
+    },
+    {
+      "title": "Carpainter",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/q.jpg"
+    },
+    {
+      "title": "Pest Controller",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/pest_cntrl.jpg"
+    }
+  ],
+  "Services": [
+    {
+      
+      "icon": "fa-solid fa-book",
+      "name": "electrician",
+      "text": "Offer a wide range of services, catering to various electrical needs. This includes repair of electric system."
+    },
+    
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Cleaner",
+      "text": "Helps customers find the right service for their specific needs, such as deep cleaning, regular home cleaning, or post-construction cleaning."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "gardener",
+      "text": " help maintain, design, and enhance the aesthetics of outdoor spaces. These  offer a wide range of services, including lawn mowing, planting, pruning, and landscape design, ensuring that customers receive top-notch gardening services."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "painter",
+      "text": " to various painting requirements, such as wall painting, mural art, and even intricate designs. This variety ensures that customers can find the perfect painter for their specific needs."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Carpenter",
+      "text": "offers a diverse range of carpentry services, from simple furniture repairs to custom-made wooden pieces and home renovations. This allows customers to find  carpenters who can cater to their specific needs"
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Pest Controller",
+      "text": "offers a wide range of pest control services, catering to various types of pests such as cockroaches, termites, mosquitoes, rats, and more. This ensures that users can find the appropriate service provider to address their specific pest-related issues, maintaining a clean and healthy living environment."
+    }
+  ],
+  "ServiceList": [
+    {
+      
+      "icon": "fa-solid fa-book",
+      "name": "electrician",
+      "text": "Offer a wide range of services, catering to various electrical needs. This includes repair of electric system."
+    },
+    
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Cleaner",
+      "text": "Helps customers find the right service for their specific needs, such as deep cleaning, regular home cleaning, or post-construction cleaning."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "gardener",
+      "text": " help maintain, design, and enhance the aesthetics of outdoor spaces. These  offer a wide range of services, including lawn mowing, planting, pruning, and landscape design, ensuring that customers receive top-notch gardening services."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "painter",
+      "text": " to various painting requirements, such as wall painting, mural art, and even intricate designs. This variety ensures that customers can find the perfect painter for their specific needs."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Carpenter",
+      "text": "offers a diverse range of carpentry services, from simple furniture repairs to custom-made wooden pieces and home renovations. This allows customers to find  carpenters who can cater to their specific needs"
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Pest Controller",
+      "text": "offers a wide range of pest control services, catering to various types of pests such as cockroaches, termites, mosquitoes, rats, and more. This ensures that users can find the appropriate service provider to address their specific pest-related issues, maintaining a clean and healthy living environment."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": " Public convenience Pavan CHS gokhlenagar ,Pune",
+    "phone": "+917898657041",
+    "email": "info@skilllink.com",
+    "facebook": "https://www.facebook.com/",
+    "twitter": "https://twitter.com/?lang=en-in",
+    "youtube": "https://www.youtube.com/"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Instant Booking",
+      "text": "Quick and easy booking system for users to request services.Real-time availability and scheduling options."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Rating and Review System",
+      "text": "Users can leave reviews and ratings for service providers.Transparent rating system to help users make informed decisions."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Quality Assurance",
+      "text": "Verification of service providers, including background checks and skills assessment."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{"ServiceList": [
+    {
+      
+      "icon": "fa-solid fa-book",
+    
+      "name": "electrician",
+      "text": "Offer a wide range of services, catering to various electrical needs. This includes repair of electric system."
+    },
+    
+    {
+      "icon": "fa fa-cart-",
+      
+      "name": "Cleaner",
+      "text": "Helps customers find the right service for their specific needs, such as deep cleaning, regular home cleaning, or post-construction cleaning."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      
+      "name": "gardener",
+      "text": " help maintain, design, and enhance the aesthetics of outdoor spaces. These  offer a wide range of services, including lawn mowing, planting, pruning, and landscape design, ensuring that customers receive top-notch gardening services."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "painter",
+      "text": " to various painting requirements, such as wall painting, mural art, and even intricate designs. This variety ensures that customers can find the perfect painter for their specific needs."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Carpenter",
+      "text": "offers a diverse range of carpentry services, from simple furniture repairs to custom-made wooden pieces and home renovations. This allows customers to find  carpenters who can cater to their specific needs"
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Pest Controller",
+      "text": "offers a wide range of pest control services, catering to various types of pests such as cockroaches, termites, mosquitoes, rats, and more. This ensures that users can find the appropriate service provider to address their specific pest-related issues, maintaining a clean and healthy living environment."
+    }
+  ]}
