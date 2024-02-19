@@ -116,8 +116,8 @@ const BookedServices = () => {
               <th scope="col">NameLast</th>
               <th scope="col">PhoneNumber</th>
               <th scope="col">Skills</th>
-              <th scope="col">Wages</th>
-              <th scope="col">Average Ratings</th>
+              <th scope="col">Charges</th>
+              <th scope="col">Ratings</th>
               <th scope="col">Select</th>
               <th scope="col">Give Feedback</th>
             </tr>

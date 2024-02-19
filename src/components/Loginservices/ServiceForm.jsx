@@ -93,7 +93,7 @@ const ServiceForm = () => {
           </div>
         </nav>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label
               htmlFor="pid"
               className="form-label"
@@ -109,8 +109,38 @@ const ServiceForm = () => {
               value={formData.skills}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
+              required
             />
+          </div> */}
+          <div className="form-group">
+            <label
+              htmlFor="pid"
+              className="form-label"
+              style={{ fontSize: "16px" }}
+            >
+              Service
+            </label>
+            <select 
+              className="form-control"
+              id="pid"
+              name="skills"
+              value={formData.skills}
+              onChange={handleChange}
+              style={{ fontSize: "16px" }}
+              required
+            >
+              <option value="" disabled>Select a service</option>
+              <option value="Plumber">Plumber</option>
+              <option value="Carpainter">Carpainter</option>
+              <option value="Painter">Painter</option>
+              <option value="Pest Controller">Pest Controller</option>
+              <option value="Gardner">Gardner</option>
+              <option value="Electrician">Electrician</option>
+              <option value="Cleaner">Cleaner</option>
+              {/* Add more options as needed */}
+            </select>
           </div>
+
           <div className="form-group">
             <label
               htmlFor="pname"
@@ -120,8 +150,9 @@ const ServiceForm = () => {
               wages
             </label>
             <input
-              type="number"
+              type="text"
               className="form-control"
+              pattern="^[1-9][0-9]*$"
               style={{
                 backgroundColor: "#f5f5f5",
                 borderColor: "#ccc",
@@ -131,6 +162,7 @@ const ServiceForm = () => {
               name="wages"
               value={formData.wages}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -149,6 +181,7 @@ const ServiceForm = () => {
               value={formData.address}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
+              required
             />
           </div>
           <div className="form-group">
@@ -167,6 +200,7 @@ const ServiceForm = () => {
               value={formData.date}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
+              required
             />
           </div>
 

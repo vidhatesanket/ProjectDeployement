@@ -79,6 +79,7 @@ const GiveFeedback = () => {
                         value={ratingValue}
                         onClick={() => handleStarClick(ratingValue)}
                         style={{ display: "none" }}
+                        required
                       />
                       <FaStar
                         className="star"

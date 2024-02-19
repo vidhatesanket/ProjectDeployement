@@ -60,8 +60,8 @@ const ServiceRegistration = () => {
 
       // setMessage(response.data); // Set the message received from the server
     } catch (error) {
-      console.error("Error:", error);
       setMessage("An error occurred. Please try again later."); // Set a generic error message
+      alert("Service Provider with same username is already existing");
     }
   };
   return (
@@ -111,10 +111,11 @@ const ServiceRegistration = () => {
               <div className="pass-input-div">
                 <input
                   type={showPassword ? "text" : "password"}
-                  placeholder="Password"
+                  placeholder="Password (8-15 characters, 1 uppercase, 1 digit, 1 special character)"
                   name="Password"
                   value={formData.Password}
                   onChange={handleChange}
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$"
                   required
                 />
                 {showPassword ? (
@@ -131,34 +132,49 @@ const ServiceRegistration = () => {
                   />
                 )}
               </div>
-              {/* <div className="form-group">
-                <label htmlFor="pname">PhoneNumber</label>
-                <input
-                  type="number"
-                  className="form-control"
-                  id="pname"
-                  name="wages"
-                  value={formData.wages}
-                  maxLength={10}
-                  onChange={handleChange}
-                  required
-                />
-              </div> */}
-              <input type="text" placeholder="Phonenumber" name="PhoneNumber" maxlength="10"  value={formData.PhoneNumber} onChange={handleChange} required/>
               <input
+                type="text"
+                placeholder="Phonenumber"
+                name="PhoneNumber"
+                maxlength="10"
+                value={formData.PhoneNumber}
+                pattern="[6-9]{1}[0-9]{9}"
+                onChange={handleChange}
+                required
+              />
+              {/* <input
                 type="text"
                 placeholder="Skills"
                 name="Skills"
                 value={formData.Skills}
                 onChange={handleChange}
                 required
-              />
+              /> */}
+              <select
+                className="form-control"
+                id="skills"
+                name="skills"
+                value={formData.skills}
+                onChange={handleChange}
+                required
+              >
+                <option value="" disabled>Select a service</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Carpenter">Carpenter</option>
+                <option value="Painter">Painter</option>
+                <option value="Pest Controller">Pest Controller</option>
+                <option value="Gardener">Gardener</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Cleaner">Cleaner</option>
+              </select>
+
               <input
                 type="text"
-                placeholder="Wages"
+                placeholder="Charges"
                 name="Wages"
                 value={formData.Wages}
                 onChange={handleChange}
+                pattern="^[1-9][0-9]*$"
                 required
               />
               <input
