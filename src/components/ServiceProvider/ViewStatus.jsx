@@ -60,7 +60,7 @@ const ViewStatus = () => {
         </nav>
       <br/><br/><br/><br/>
       </div>
-      <h2 className="text-center">View Status</h2>
+      <h3 className="text-center">Your appointments</h3><br/>
       <table className="table table-striped">
         <thead>
           <tr>
@@ -80,7 +80,7 @@ const ViewStatus = () => {
               <td>{service.phoneNumber}</td>
               <td>{service.address}</td>
               <td>{service.wages}</td>
-              <td>{service.date}</td>
+              <td>{service.date.split(" ")[0]}</td>
             </tr>
           ))}
         </tbody>
