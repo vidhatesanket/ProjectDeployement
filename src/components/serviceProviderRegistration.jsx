@@ -176,7 +176,6 @@ const ServiceRegistration = () => {
               </div>
             </form>
           </div>
-          =
         </div>
       </div>
     </div>
