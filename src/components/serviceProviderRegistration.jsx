@@ -90,6 +90,8 @@ const ServiceRegistration = () => {
                 name="NameFirst"
                 value={formData.NameFirst}
                 onChange={handleChange}
+                pattern="[A-Za-z]+"
+                title="Please enter only characters"
                 required
               />
               <input
@@ -98,6 +100,8 @@ const ServiceRegistration = () => {
                 name="NameLast"
                 value={formData.NameLast}
                 onChange={handleChange}
+                pattern="[A-Za-z]+"
+                title="Please enter only characters"
                 required
               />
               <input
@@ -156,6 +160,7 @@ const ServiceRegistration = () => {
                 name="skills"
                 value={formData.skills}
                 onChange={handleChange}
+                defaultValue=""
                 required
               >
                 <option value="" disabled>Select a service</option>
@@ -166,6 +171,8 @@ const ServiceRegistration = () => {
                 <option value="Gardener">Gardener</option>
                 <option value="Electrician">Electrician</option>
                 <option value="Cleaner">Cleaner</option>
+
+            
               </select>
 
               <input
@@ -183,6 +190,8 @@ const ServiceRegistration = () => {
                 name="Address"
                 value={formData.Address}
                 onChange={handleChange}
+                pattern="[A-Za-z]+"
+                title="Please enter only characters"
                 required
               />
 

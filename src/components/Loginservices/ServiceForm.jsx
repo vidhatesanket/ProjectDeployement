@@ -131,10 +131,10 @@ const ServiceForm = () => {
             >
               <option value="" disabled>Select a service</option>
               <option value="Plumber">Plumber</option>
-              <option value="Carpainter">Carpainter</option>
+              <option value="Carpenter">Carpenter</option>
               <option value="Painter">Painter</option>
               <option value="Pest Controller">Pest Controller</option>
-              <option value="Gardner">Gardner</option>
+              <option value="Gardener">Gardener</option>
               <option value="Electrician">Electrician</option>
               <option value="Cleaner">Cleaner</option>
               {/* Add more options as needed */}
@@ -181,6 +181,7 @@ const ServiceForm = () => {
               value={formData.address}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
+              pattern="[A-Za-z]+"
               required
             />
           </div>

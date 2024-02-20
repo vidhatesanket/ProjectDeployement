@@ -61,14 +61,20 @@ const Registration = () => {
                 placeholder="First Name"
                 name="NameFirst"
                 value={formData.NameFirst}
-                onChange={handleChange} required
+                onChange={handleChange} 
+                title="Please enter only characters"
+                required
+                pattern="[A-Za-z]+"
               />
               <input
                 type="text"
                 placeholder="Last Name"
                 name="NameLast"
                 value={formData.NameLast}
-                onChange={handleChange} required
+                onChange={handleChange}
+                title="Please enter only characters"
+                required
+                pattern="[A-Za-z]+"
               />
               <input
                 type="text"
@@ -107,7 +113,10 @@ const Registration = () => {
                 placeholder="Address"
                 name="Address"
                 value={formData.Address}
-                onChange={handleChange} required
+                onChange={handleChange}
+                pattern="[A-Za-z]+"
+                title="Please enter only characters"
+                required
               />
               <div className="login-center-buttons">
                 <button type="submit">Sign Up</button>

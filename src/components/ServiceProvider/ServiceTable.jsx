@@ -40,7 +40,19 @@ export default function ServiceTable() {
       console.log("Error accepting service:", err);
     }
   };
-
+  // const acceptService = async (userID) => {
+  //   try {
+  //     await axios.post(
+  //       "http://localhost:5020/api/BookingList/serviceProvider/bookingList",
+  //       { userID, serviceProviderData }
+  //     );
+  //     // Handle success, maybe show a confirmation message
+  //     setAcceptedServices(prevState => [...prevState, userID]); // Mark the user ID as accepted
+  //   } catch (err) {
+  //     console.log("Error accepting service:", err);
+  //   }
+  // };
+  
   const isAccepted = (userID) => {
     console.log("user id", userID);
     return acceptedServices.includes(userID);
@@ -141,7 +153,14 @@ export default function ServiceTable() {
                 >
                   {isAccepted(ob.userID) ? "Accepted" : "Accept"}
                 </button>
-                
+                {/* <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => acceptService(ob.userID)}
+                  disabled={isAccepted(ob.userID)} // Disable button if service is already accepted
+                >
+                  {isAccepted(ob.userID) ? "Accepted" : "Accept"}
+                </button> */}
                 &nbsp;&nbsp;&nbsp;
               </td>
             </tr>
