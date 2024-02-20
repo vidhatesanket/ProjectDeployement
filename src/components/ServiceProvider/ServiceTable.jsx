@@ -345,13 +345,14 @@ export default function ServiceTable() {
     fetchData();
   }, [serviceProviderData.skills]); 
 
+  console.log("User Requirement===> ",slist);
   const navigate = useNavigate();
 
-  const handleCheckboxChange = (event, userID) => {
+  const handleCheckboxChange = (event, requirementID) => {
     if (event.target.checked) {
-      setSelectedServices(prevState => [...prevState, userID]);
+      setSelectedServices(prevState => [...prevState, requirementID]);
     } else {
-      setSelectedServices(prevState => prevState.filter(id => id !== userID));
+      setSelectedServices(prevState => prevState.filter(id => id !== requirementID));
     }
   };
 
@@ -462,8 +463,8 @@ export default function ServiceTable() {
               <td>
                 <input
                   type="checkbox"
-                  checked={selectedServices.includes(ob.userID)}
-                  onChange={(e) => handleCheckboxChange(e, ob.userID)}
+                  checked={selectedServices.includes(ob.requirementID)}
+                  onChange={(e) => handleCheckboxChange(e, ob.requirementID)}
                 />
               </td>
             </tr>

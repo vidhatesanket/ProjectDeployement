@@ -162,6 +162,7 @@ const ServiceForm = () => {
               name="wages"
               value={formData.wages}
               onChange={handleChange}
+              title="Only positive number is allowed"
               required
             />
           </div>
@@ -201,6 +202,7 @@ const ServiceForm = () => {
               value={formData.date}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
+              min="2024-02-20"
               required
             />
           </div>
