@@ -15,11 +15,14 @@ const GiveFeedback = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5020/api/User/giveFeedback", {
-        ServiceProviderUsername: serviceProviderUsername,
-        FeedbackMessage: feedback,
-        Rating: rating
-      });
+      const response = await axios.post(
+        "http://localhost:5020/api/User/giveFeedback",
+        {
+          ServiceProviderUsername: serviceProviderUsername,
+          FeedbackMessage: feedback,
+          Rating: rating,
+        }
+      );
       // Set message received from backend to state
       setMessage(response.data.message);
       // Optionally, you can reset the form here
@@ -46,7 +49,9 @@ const GiveFeedback = () => {
         {!hasSubmittedFeedback && (
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="serviceProviderUsername">Service Provider Username</label>
+              <label htmlFor="serviceProviderUsername">
+                Service Provider Username
+              </label>
               <input
                 type="text"
                 className="form-control"
