@@ -86,7 +86,7 @@ const ServiceRegistration = () => {
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
-                placeholder="Namefirst"
+                placeholder="First name"
                 name="NameFirst"
                 value={formData.NameFirst}
                 onChange={handleChange}
@@ -96,7 +96,7 @@ const ServiceRegistration = () => {
               />
               <input
                 type="text"
-                placeholder="Namelast"
+                placeholder="Last name"
                 name="NameLast"
                 value={formData.NameLast}
                 onChange={handleChange}
