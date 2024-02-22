@@ -20,7 +20,15 @@ import ServiceTable from './components/ServiceProvider/ServiceTable';
 import BookedServices from './components/ServiceProvider/BookedServices';
 import ViewStatus from './components/ServiceProvider/ViewStatus';
 import GiveFeedback from './components/ServiceProvider/GiveFeedback';
+import UpdateProfileSP from './components/ServiceProvider/UpdateProfileSP';
+import UpdateProfile from './components/Loginservices/UpdateProfile';
+import ForgotPassword from './components/Loginservices/forgotPassword';
+import ForgotPasswordSP from './components/ServiceProvider/forgotPasswordSP';
+
+
+
 import ServiceLogin from './components/serviceProviderLogin';
+import ViewFeedback from './components/ServiceProvider/ViewFeedback';
 const App = () => {
 
 
@@ -33,7 +41,43 @@ const App = () => {
     const status=sessionStorage["status"]
     return status==="success" ? <ServiceList/> :<Login/>
   }
+  const AuthorizedupdateProfile=()=>{
+    const status=sessionStorage["success"]
+    return status==="success"?<UpdateProfile/>:<Login/>
+  }
+  const AuthorizedServiceList=()=>{
+    const status=sessionStorage["success"]
+    return status==="success"?<ServiceList/>:<Login/>
+  }
+   const AuthorizedServiceForm=()=>{
+    const status=sessionStorage["success"]
+    return status==="success"?<ServiceForm/>:<Login/>
+  }
+  const AuthorizedServicetable=()=>{
+    const status=sessionStorage["successsp"]
+    return status==="successsp"?<ServiceTable/>:<ServiceLogin/>
+  }
+  const AuthorizedBookedServices=()=>{
+    const status=sessionStorage["success"]
+    return status==="success"?<BookedServices/>:<Login/>
+  }
 
+  const AuthorizedupdateProfileSp=()=>{
+    const status=sessionStorage["successsp"]
+    return status==="successsp"?<UpdateProfileSP/>:<ServiceLogin/>
+  }
+  const AuthorizedViewStatus=()=>{
+    const status=sessionStorage["successsp"]
+    return status==="successsp"?<ViewStatus/>:<ServiceLogin/>
+  }
+  const AuthorizedViewFeedBack=()=>{
+    const status=sessionStorage["successsp"]
+    return status==="successsp"?<ViewFeedback/>:<ServiceLogin/>
+  }
+  const AuthorizedGiveFeedBAck=()=>{
+    const status=sessionStorage["success"]
+    return status==="success"?<GiveFeedback/>:<Login/>
+  }
   return (
     <div>
    
@@ -43,15 +87,22 @@ const App = () => {
       <Route path="login" element={<Login></Login>}/> 
       <Route path="register" element={<Registration></Registration>}/>
       {/* <Route path="login" element={<ServiceLogin></ServiceLogin>}></Route> */}
-      <Route path="/servicelist" element={<ServiceList></ServiceList>}/>
+      <Route path="/servicelist" element={<AuthorizedServiceList></AuthorizedServiceList>}/>
       <Route path="/servicerequest" element={<Authorizedrequest/>}/>
-      <Route path="/serviceform" element={<ServiceForm></ServiceForm>}/>
+      <Route path="/serviceform" element={<AuthorizedServiceForm></AuthorizedServiceForm>}/>
       <Route path="/serviceprovider" element={<ServiceLogin></ServiceLogin>}/>
       <Route path="/ServiceProviderregister" element={<ServiceRegistration></ServiceRegistration>}/>
-      <Route path="/data"   element={<ServiceTable/>}/>
-      <Route path="/bookedservices"   element={<BookedServices/>}/>
-      <Route path="/viewStatus"   element={<ViewStatus/>}/>
-      <Route path="/give-feedback" element={<GiveFeedback />} />
+      <Route path="/data"   element={<AuthorizedServicetable/>}/>
+      <Route path="/bookedservices"   element={<AuthorizedBookedServices/>}/>
+      <Route path="/viewStatus"   element={<AuthorizedViewStatus/>}/>
+      <Route path="/viewFeedback"   element={<AuthorizedViewFeedBack/>}/>
+      <Route path="/give-feedback" element={<AuthorizedGiveFeedBAck />} />
+      <Route path="/forgot" element={<ForgotPassword/>}/>
+      <Route path="/forgotsp" element={<ForgotPasswordSP/>}/>
+
+      <Route path="/Userupdate" element={<AuthorizedupdateProfile/>}/>
+      <Route path="/ServiceProviderupdate" element={<AuthorizedupdateProfileSp/>}/>
+    
     </Routes>
     </BrowserRouter>
     </div>

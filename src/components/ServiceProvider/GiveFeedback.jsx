@@ -12,12 +12,14 @@ const GiveFeedback = () => {
   const serviceProviderUsername = location.state.serviceProviderUsername;
   const userData = JSON.parse(localStorage.getItem("user"));
 
+  console.log(userData);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
         "http://localhost:5020/api/User/giveFeedback",
         {
+          Username:userData.username,
           ServiceProviderUsername: serviceProviderUsername,
           FeedbackMessage: feedback,
           Rating: rating,

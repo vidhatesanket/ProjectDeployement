@@ -86,10 +86,12 @@ const Registration = () => {
               <div className="pass-input-div">
                 <input
                   type={showPassword ? "text" : "password"}
-                  placeholder="Password (8-15 characters, 1 uppercase, 1 digit, 1 special character)"
+                  placeholder="Password"
                   name="Password"
                   value={formData.Password}
-                  onChange={handleChange} required
+                  onChange={handleChange} 
+                  title="Password must contain 8-15 characters, 1 uppercase, 1 digit, 1 special character"
+                  required
                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$"
                   />
                 

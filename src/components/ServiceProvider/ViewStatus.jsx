@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 const ViewStatus = () => {
   const [bookedServices, setBookedServices] = useState([]);
-  const serviceProviderData = JSON.parse(localStorage.getItem("serviceProvider"));
-
+  const serviceProviderData = JSON.parse(
+    localStorage.getItem("serviceProvider")
+  );
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchBookedServices = async () => {
       try {
-        console.log("service provider user name: ",serviceProviderData.username);
-        const response = await axios.get(`http://localhost:5020/api/ServiceProvider/getStatus?serviceproviderusername=${serviceProviderData.username}`);
+        console.log(
+          "service provider user name: ",
+          serviceProviderData.username
+        );
+        const response = await axios.get(
+          `http://localhost:5020/api/ServiceProvider/getStatus?serviceproviderusername=${serviceProviderData.username}`
+        );
         setBookedServices(response.data);
       } catch (error) {
         console.error("Error fetching booked services:", error);
       }
     };
 
-    if (serviceProviderData.username){
+    if (serviceProviderData.username) {
       fetchBookedServices();
     }
   }, [serviceProviderData.username]);
@@ -25,42 +32,61 @@ const ViewStatus = () => {
     localStorage.removeItem("user");
     window.location.href = "/login";
   };
+  const viewFeedback = () => {
+    navigate("/viewFeedback");
+  };
 
   return (
     <div className="container">
       <div className="d-flex justify-content-between align-items-center mb-3">
       <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-            <div className="container">
-                <div className="navbar-header">
-                    <button
-                        type="button"
-                        className="navbar-toggle collapsed"
-                        data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1"
-                    >
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                    <a className="navbar-brand page-scroll" href="#page-top">
-                        👤{serviceProviderData.username}
-                    </a>
-                </div>
-                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul className="nav navbar-nav navbar-right">        
-                        <li>
-                            <a href="/" onClick={handleLogout}>
-                                LogOut
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-      <br/><br/><br/><br/>
+        <div className="container">
+          <div className="navbar-header">
+            <button
+              type="button"
+              className="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
+            <a className="navbar-brand page-scroll" href="#page-top">
+              👤{serviceProviderData.username}
+            </a>
+          </div>
+          <div
+            className="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul className="nav navbar-nav navbar-right">
+              <li>
+                <a
+                  href="viewFeedback"
+                  onClick={viewFeedback}
+                  className="page-scroll"
+                >
+                  View Feedback
+                </a>
+              </li>
+              <li>
+                <a href="/" onClick={handleLogout}>
+                  LogOut
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br />
+      <br />
+      <br />
+      <br />
       </div>
-      <h3 className="text-center">Your appointments</h3><br/>
+      <h3 className="text-center">Your appointments</h3>
+      <br />
       <table className="table table-striped">
         <thead>
           <tr>

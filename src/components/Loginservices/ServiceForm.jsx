@@ -93,25 +93,6 @@ const ServiceForm = () => {
           </div>
         </nav>
         <form onSubmit={handleSubmit}>
-          {/* <div className="form-group">
-            <label
-              htmlFor="pid"
-              className="form-label"
-              style={{ fontSize: "16px" }}
-            >
-              Service
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="pid"
-              name="skills"
-              value={formData.skills}
-              onChange={handleChange}
-              style={{ fontSize: "16px" }}
-              required
-            />
-          </div> */}
           <div className="form-group">
             <label
               htmlFor="pid"
@@ -202,7 +183,7 @@ const ServiceForm = () => {
               value={formData.date}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
-              min="2024-02-20"
+              min="2024-02-22"
               required
             />
           </div>

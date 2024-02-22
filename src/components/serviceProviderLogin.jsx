@@ -44,6 +44,8 @@ const handleSubmit = async (e) => {
                 // sessionStorage["namefirst"]=namefirst
                 // sessionStorage["username"]=username
                 // sessionStorage["wages"]=wages
+                sessionStorage["successsp"]="successsp";
+
                 alert("success")
                 navigate("/data")
             }else{
@@ -84,7 +86,7 @@ const handleSubmit = async (e) => {
 
               <div className="login-center-options">
              
-                <a href="#" className="forgot-pass-link">
+                <a href="/forgotSP" className="forgot-pass-link">
                   Forgot password?
                 </a>
               </div>

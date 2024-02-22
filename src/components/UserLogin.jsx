@@ -43,6 +43,7 @@ const Login = () => {
         const { message, user } = response.data; 
         console.log(response.data);
         setMessage(message);
+        sessionStorage["success"]="success"
         setUser(user); 
         handleLoginSuccess(user);
       } else {
@@ -98,7 +99,7 @@ const Login = () => {
                 )}
               </div>
               <div className="login-center-options">
-                <a href="#" className="forgot-pass-link">
+                <a href="/forgot" className="forgot-pass-link">
                   Forgot password?
                 </a>
               </div>
