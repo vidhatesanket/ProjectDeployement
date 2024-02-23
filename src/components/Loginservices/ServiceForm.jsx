@@ -183,7 +183,7 @@ const ServiceForm = () => {
               value={formData.date}
               onChange={handleChange}
               style={{ fontSize: "16px" }}
-              min="2024-02-22"
+              min="2024-02-23"
               required
             />
           </div>
